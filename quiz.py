@@ -1,5 +1,6 @@
 import curses
 import enum
+import json
  
 class quiz_state(enum.Enum):
     TITLE = 1
@@ -15,7 +16,9 @@ def main(stdscr):
     global height
     global width
     global question_counter
-    question_counter = 0
+
+    f = open("questions.json", "r")
+    q_list = json.loads(f.read())
 
     # Start colors in curses
     curses.start_color()
@@ -25,6 +28,7 @@ def main(stdscr):
     curses.curs_set(0)
 
     k = 0
+    question_counter = 0
     state = quiz_state.TITLE
     while (k != ord('q')):
         height, width = stdscr.getmaxyx()
@@ -37,7 +41,7 @@ def main(stdscr):
             draw_title(stdscr)
 
         elif(state == quiz_state.QUESTION):
-            draw_question(stdscr)
+            draw_question(stdscr, q_list[0])
             question_counter += 1
             if(question_counter > QUESTIONS_TO_ASK):
                 state = quiz_state.END
@@ -71,8 +75,8 @@ def draw_end(stdscr):
 
     stdscr.addstr(start_y, start_x_title, title, curses.color_pair(1) | curses.A_BOLD)
 
-def draw_question(stdscr):
-    title = "THIS IS A QUESTION!!!!"
+def draw_question(stdscr, q):
+    title = q["ask"]
     start_y = int((height // 2) - 2)
     start_x_title = calc_center_text(title)
 

@@ -1,0 +1,14 @@
+[
+    {
+        "topic": "stats",
+        "ask": "Approximately how many percent of all websites that use cookies use non-secure cookies?",
+        "choices": [
+            "50%",
+            "60%",
+            "70%",
+            "80"
+        ],
+        "correct": 1,
+        "explain": "According to a survey carried out by Web Technology Surveys, as of November 16, 2021, 80.4% of the websites using cookies use non-secure cookies. Some popular sites using cookies include Youtube.com, Taobao.com, Amazon.com, Wikipedia.org, etc.Some methodologies for conducting survey can be further referred here: https://w3techs.com/technologies"
+    }
+]
