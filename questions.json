@@ -1,6 +1,6 @@
 [
     {
-        "topic": "stats",
+        "topic": "Statistics",
         "ask": "Approximately how many percent of all websites that use cookies use non-secure cookies?",
         "choices": [
             "50%",
@@ -10,5 +10,77 @@
         ],
         "correct": 1,
         "explain": "According to a survey carried out by Web Technology Surveys, as of November 16, 2021, 80.4% of the websites using cookies use non-secure cookies. Some popular sites using cookies include Youtube.com, Taobao.com, Amazon.com, Wikipedia.org, etc.Some methodologies for conducting survey can be further referred here: https://w3techs.com/technologies"
+    },
+    {
+        "topic": "Statistics",
+        "ask": "How many percent of Gen-Z users that use the same password for several online accounts?",
+        "choices": [
+            "58%",
+            "68%",
+            "78%",
+            "88"
+        ],
+        "correct": 2,
+        "explain": "According to Harris Poll, 78% of those aged 16-24 admit using same passwords across multiple websites. 67% of Millennials rely on single password for several accounts. 60% of Baby Boomers have a habit of password recycling. More information could be found here: https://dataprot.net/statistics/password-statistics/"
+    },
+    {
+        "topic": "Statistics",
+        "ask": "Since Covid-19, reported cyber-crimes have increased by how many percent?",
+        "choices": [
+            "50%",
+            "100%",
+            "250%",
+            "300%"
+        ],
+        "correct": 3,
+        "explain": "According to FBI, there was a 300% increase in cybercrimes. The IC3 has received 3000-4000 cybersecurity complaints each day compared to 1000 daily before Covid-19. More information could be found here: https://thehill.com/policy/cybersecurity/493198-fbi-sees-spike-in-cyber-crime-reports-during-coronavirus-pandemic"
+    },
+    {
+        "topic": "Statistics",
+        "ask": "Since the beginning of Covid-19, increase in fraudulent mails, spam, and phishing attempts have been noticed by how many percent of employees?",
+        "choices": [
+            "25%",
+            "35%",
+            "45%",
+            "55%"
+        ],
+        "correct": 0,
+        "explain": "According to Deloitte, one-quarter of the employees have received more fraudulent mails/spam mails/phishing mails at work. More information could be found here: https://www2.deloitte.com/ch/en/pages/risk/articles/covid-19-cyber-crime-working-from-home.html"
+    },
+    {
+        "topic": "Statistics",
+        "ask": "How many percent of users have stopped using public Wi-Fi to protect their online privacy?",
+        "choices": [
+            "17%",
+            "27%",
+            "37%",
+            "47%"
+        ],
+        "correct": 1,
+        "explain": "According to Norton, 27% of users have stopped using public Wi-Fi to protect their online privacy. Some other actions taken include making some/all passwords stronger (48% of users), limiting information shared on social platforms (38% of users), enabling multi-factor authenticator (22% of users), etc. More information could be found here: https://now.symassets.com/content/dam/norton/campaign/NortonReport/2021/2021_NortonLifeLock_Cyber_Safety_Insights_Report_Global_Results.pdf"
+    },
+    {
+        "topic": "Statistics",
+        "ask": "How much average ransom is paid by mid-sized organizations?",
+        "choices": [
+            "$170,000",
+            "$190,000",
+            "$210,000",
+            "$230,000"
+        ],
+        "correct": 1,
+        "explain": "According to Sophos, the average payment for ransom is $170,404 over 282 respondents, with average of $107,694 for 100-1000 employee organizations and $225,588 for 1000-5000 employee organizations. More information could be found here: https://www.sophos.com/en-us/medialibrary/pdfs/whitepaper/sophos-state-of-ransomware-2021-wp.pdf?cmp=120469"
+    },
+    {
+        "topic": "Statistics",
+        "ask": "How many percent of online fraud is accomplished through mobile platforms?",
+        "choices": [
+            "30%",
+            "50%",
+            "70%",
+            "90%"
+        ],
+        "correct": 2,
+        "explain": "According to RSA 2019 Report, 70% of fraud transactions originates in mobile channel. RSA identified an average of 82 rogue mobile applications per day in 2018. This statistic is highly likely to have increased by now. More information could be found here: https://www.rsa.com/content/dam/en/white-paper/2019-current-state-of-cybercrime.pdf"
     }
 ]
