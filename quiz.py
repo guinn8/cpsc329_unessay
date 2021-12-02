@@ -57,10 +57,11 @@ def draw_status(stdscr):
         quiz_sts_string = " | {} /  {}  Questions in quiz".format(question_counter, QUESTIONS_TO_ASK)
 
     statusbarstr += quiz_sts_string
-
+    status_bar_pad = " " * (width - len(statusbarstr) - 1)
+    
     stdscr.attron(curses.color_pair(3))
     stdscr.addstr(height-1, 0, statusbarstr)
-    stdscr.addstr(height-1, len(statusbarstr), " " * (width - len(statusbarstr) - 1))
+    stdscr.addstr(height-1, len(statusbarstr), status_bar_pad)
     stdscr.attroff(curses.color_pair(3))
 
 def draw_end(stdscr):
@@ -68,22 +69,14 @@ def draw_end(stdscr):
     start_y = int((height // 2) - 2)
     start_x_title = calc_center_text(title)
 
-    stdscr.attron(curses.color_pair(1))
-    stdscr.attron(curses.A_BOLD)
-    stdscr.addstr(start_y, start_x_title, title)
-    stdscr.attroff(curses.color_pair(1))
-    stdscr.attroff(curses.A_BOLD)
+    stdscr.addstr(start_y, start_x_title, title, curses.color_pair(1) | curses.A_BOLD)
 
 def draw_question(stdscr):
     title = "THIS IS A QUESTION!!!!"
     start_y = int((height // 2) - 2)
     start_x_title = calc_center_text(title)
 
-    stdscr.attron(curses.color_pair(2))
-    stdscr.attron(curses.A_BOLD)
-    stdscr.addstr(start_y, start_x_title, title)
-    stdscr.attroff(curses.color_pair(2))
-    stdscr.attroff(curses.A_BOLD)
+    stdscr.addstr(start_y, start_x_title, title, curses.color_pair(2) | curses.A_BOLD)
 
 def draw_title(stdscr):
     title = "Curses example"[:width-1]
@@ -92,11 +85,7 @@ def draw_title(stdscr):
     start_x_title = calc_center_text(title)
     start_y = int((height // 2) - 2)
 
-    stdscr.attron(curses.color_pair(2))
-    stdscr.attron(curses.A_BOLD)
-    stdscr.addstr(start_y, start_x_title, title)
-    stdscr.attroff(curses.color_pair(2))
-    stdscr.attroff(curses.A_BOLD)
+    stdscr.addstr(start_y, start_x_title, title, curses.color_pair(2) | curses.A_UNDERLINE)
 
     start_x_subtitle = calc_center_text(subtitle)
     stdscr.addstr(start_y + 1, start_x_subtitle, subtitle)
