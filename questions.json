@@ -18,7 +18,7 @@
             "58%",
             "68%",
             "78%",
-            "88"
+            "88%"
         ],
         "correct": 2,
         "explain": "According to Harris Poll, 78% of those aged 16-24 admit using same passwords across multiple websites. 67% of Millennials rely on single password for several accounts. 60% of Baby Boomers have a habit of password recycling. More information could be found here: https://dataprot.net/statistics/password-statistics/"
@@ -82,5 +82,77 @@
         ],
         "correct": 2,
         "explain": "According to RSA 2019 Report, 70% of fraud transactions originates in mobile channel. RSA identified an average of 82 rogue mobile applications per day in 2018. This statistic is highly likely to have increased by now. More information could be found here: https://www.rsa.com/content/dam/en/white-paper/2019-current-state-of-cybercrime.pdf"
+    },
+    {
+        "topic": "Linux",
+        "ask": "Which BASH command will NOT change the present directory to the user's home directory?",
+        "choices": [
+            "cd ~",
+            "cd ~ && cd / && cd -",
+            "cd /home/your_username",
+            "cd / && cd ~ && cd -"
+        ],
+        "correct": 3,
+        "explain": "The command `cd / && cd ~ && cd -` doesn't change the present working directory to home. Instead in sequential order it changes directories to the root, home directory, and back to root. The `cd -` jumps back to last visited directory."
+    },
+    {
+        "topic": "Linux",
+        "ask": "Which operating system family is NOT a descendant of the 1970's Unix operating system?",
+        "choices": [
+            "Android",
+            "Windows",
+            "Linux",
+            "macOS"
+        ],
+        "correct": 1,
+        "explain": "Derived from the 1980's MS-DOS operating system Microsoft Windows was developed independently from Unix. The team at Microsoft fixed this obvious mistake with the introduction of the Windows Subsystem for Linux (WSL) imbedding all the functionality of Linux into Windows."
+    },
+    {
+        "topic": "Linux",
+        "ask": "Which of the following commands will (almost certainly) NOT destroy a Linux installation?",
+        "choices": [
+            "sudo rm -r /usr/bin/python",
+            "sudo rm -rf /",
+            "sudo rm -rf ~",
+            "mv / /dev/null"
+        ],
+        "correct": 2,
+        "explain": "First off running any of these commands is a really bad idea. `sudo rm -rf ~` however probably will not destroy your OS as `~` should *only* contain user created files, one could imagine this command could an destroy an OS if oddly configured. I can testify personally that `sudo rm -r /usr/bin/python` will destroy an Ubuntu install..."
+    },
+    {
+        "topic": "Linux",
+        "ask": "Say you try to run `./some_exe` and get a `permission denied` error, whats the best solution?",
+        "choices": [
+            "chmod u+x some_exe",
+            "sudo ./some_exe",
+            "chmod 777 some_exe",
+            "rm some_exe"
+        ],
+        "correct": 0 ,
+        "explain": "This one was slightly petty as both `chmod 777` and `chmod u+x` will give the permissions needed to execute. However it is much better practice to use `chmod u+x` as it will only permit you and no other users to execute the file. However `chmod 777` allows all users all privileges on the executable, one should not be in the practice of using this command every time permission is denied."
+    },
+    {
+        "topic": "Linux",
+        "ask": "Roughly what percentage of web-servers run on a Unix derived OS?",
+        "choices": [
+            "5%",
+            "25%",
+            "75%",
+            "99%"
+        ],
+        "correct": 2,
+        "explain": "While estimates vary it seems to be a good bet that between 70% - 80% of servers delivering webpages in 2021 are running on *nix. Windows Server largely comprises the rest of the market share; It seems that free, reliable, and open-source software is a substantial draw for enterprise clients. See https://en.wikipedia.org/wiki/Usage_share_of_operating_systems for more details."
+    },
+    {
+        "topic": "Linux",
+        "ask": "What is NOT treated a file in Linux?",
+        "choices": [
+            "Directories",
+            "Hardware Devices",
+            "Internet Connection (sockets)",
+            "None of the above"
+        ],
+        "correct": 3,
+        "explain": "The basic philosophy of Linux is to reuse good ideas as much as possible. As such the designers abstracted away all sorts things into a simple file interface which can be read from or written to."
     }
 ]
