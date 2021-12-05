@@ -155,4 +155,28 @@
         "correct": 3,
         "explain": "The basic philosophy of Linux is to reuse good ideas as much as possible. As such the designers abstracted away all sorts things into a simple file interface which can be read from or written to."
     }
+        {
+        "topic": "Social Media",
+        "ask": "Which of the following helps Facebook track the location data of messages?",
+        "choices": [
+            "Face Recognition",
+            "Location Sharing",
+            "Activity Log",
+            "None of the above"
+        ],
+        "correct": 1,
+        "explain": "According to Business Insider, Facebook tracks the location of all messages if the Location Sharing feature is turned on. Simply turning the feature off in Settings will prevent Facebook from tracking your messages."
+    }
+        {
+        "topic": "Social Media",
+        "ask": "Which of the following practices helps keep your social media account secure?",
+        "choices": [
+            "Two-factor authentication",
+            "Changing password regularly",
+            "Learning about privacy settings",
+            "All of the above"
+        ],
+        "correct": 3,
+        "explain": "Following multiple practices to keep your account safe is a better option. Two-factor authentication, getting knowledgeable about one's privacy settings, and changing your password regularly are 3 such practices that will help keep your account secure. "
+    }
 ]
