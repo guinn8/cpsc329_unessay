@@ -179,4 +179,64 @@
         "correct": 3,
         "explain": "Following multiple practices to keep your account safe is a better option. Two-factor authentication, getting knowledgeable about one's privacy settings, and changing your password regularly are 3 such practices that will help keep your account secure. "
     }
+        {
+        "topic": "Social Media",
+        "ask": "Generally in a Social Media account, when or where can you change your privacy options/settings?",
+        "choices": [
+            "Anytime in your settings",
+            "In the popup when you post",
+            "Only when you create the account",
+            "Anytime in your feed"
+        ],
+        "correct": 0,
+        "explain": "Privacy preferences can be viewed or changed from settings, and the user can change it anytime they want."
+    }
+        {
+        "topic": "Scenario",
+        "ask": "You are playing an online game with a random person. What information is safe to share?",
+        "choices": [
+            "Your name",
+            "Your location",
+            "Other personal information",
+            "None of the above"
+        ],
+        "correct": 3,
+        "explain": "Even though this might sound obvious, but it's still important to keep in mind that one should always refrain from sharing any personal information with random individuals online. This keeps you safe and your information protected from potential threats."
+    }
+        {
+        "topic": "Social Media",
+        "ask": "Which of these Social Media platforms feature end-to-end encryption?",
+        "choices": [
+            "Facebook",
+            "Twitter",
+            "Whatsapp",
+            "Instagram"
+        ],
+        "correct": 2,
+        "explain": "Whatsapp uses end-to-end encryption to help you communicate securely as only the sender and recepient can see the messages. This way all your messages, photos, videos, voice messages, documents, and calls are secure."
+    }
+        {
+        "topic": "Scenario",
+        "ask": "You have been receiving a lot of phishing emails lately. Which one of the following can be used as a reliable approach to protect you from phishing emails?",
+        "choices": [
+            "Educate and Monitor",
+            "Reply and ask them to stop",
+            "Change email accounts regularly",
+            "None of the above"
+        ],
+        "correct": 0,
+        "explain": "Using security awareness training, one can educate and train themselves to identify potential spam and risks. Certain applications or plug-ins can also be used to keep track of phishing emails and monitor threats."
+    }
+        {
+        "topic": "Scenario",
+        "ask": "You received an email with an attachment asking you to open it urgently and fill a mandatory government survey. You click on it and immediately realise it's a phishing email. What should you do?",
+        "choices": [
+            "Restart your device",
+            "Change account passwords",
+            "Report the phishing attack",
+            "b & c"
+        ],
+        "correct": 3,
+        "explain": "Changing your account passwords is a sensible choice. This becomes even more important when the user has the same password for multiple accounts. Phishing attacks can often take place on a large scale. This can happen in companies, organizations, and even neighbourhoods. Reporting such cases to authorities can help to see trends and protect others from similar attacks."
+    }
 ]
